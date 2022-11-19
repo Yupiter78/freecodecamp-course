@@ -11,4 +11,5 @@ const makeServerRequest = new Promise((resolve, reject) => {
 });
 
 console.log(makeServerRequest);
-makeServerRequest.then(result => console.log({result: result}));
+makeServerRequest.then(result => console.log({result: result}))
+    .catch(error => console.log({error: error}));
